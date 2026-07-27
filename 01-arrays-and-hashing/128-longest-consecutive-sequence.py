@@ -39,7 +39,9 @@ Approach 2 — only start counting from true sequence starts (optimal):
 
 Complexity:
 - Approach 1: O(n^2) worst case (long consecutive runs get re-walked
-  from every element inside them), O(n) space for the set
+  from every element inside them), O(n) space for the set. 
+  For example: if nums = [1,2,3,....1000], the code tries to find next_num 
+  for each number: first it goes through 1-1000, then 2-1000 and so on..
 - Approach 2: O(n) time (each element is walked at most once total,
   across the whole run of the algorithm), O(n) space for the set
 """
